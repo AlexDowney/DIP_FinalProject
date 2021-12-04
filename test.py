@@ -102,7 +102,7 @@ def build_vae_encoder(input_dim, output_dim, conv_filters, conv_kernel_size,
 
   return encoder_input, encoder_output, mean_mu, log_var, shape_before_flattening, Model(encoder_input, encoder_output)
 
-vae_encoder_input, vae_encoder_output,  mean_mu, log_var, vae_shape_before_flattening, vae_encoder  = build_vae_encoder(input_dim = INPUT_DIM,
+vae_encoder_input, vae_encoder_output, mean_mu, log_var, vae_shape_before_flattening, vae_encoder = build_vae_encoder(input_dim = INPUT_DIM,
                                     output_dim = Z_DIM, 
                                     conv_filters = [32, 64, 64, 64],
                                     conv_kernel_size = [3,3,3,3],
