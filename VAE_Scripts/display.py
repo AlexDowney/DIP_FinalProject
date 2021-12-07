@@ -118,9 +118,9 @@ if __name__ == "__main__":
     example_batch = example_batch[0]
     example_images = example_batch[:10]
     
-    # plot_compare_vae(vae_model, images = example_images)
+    plot_compare_vae(vae_model, images = example_images)
     
-    # vae_generate_images(vae_decoder, n_to_show=20)
+    vae_generate_images(vae_decoder, n_to_show=20)
     
     data_flow = ImageDataGenerator(rescale=1./255).flow_from_directory(
         "../test_images/", 
@@ -136,7 +136,7 @@ if __name__ == "__main__":
     example_images = example_batch[:1]
     
     # plot_compare_vae(vae_model, images = example_images)
-    vae_generate_mod_images(vae_encoder, vae_decoder, example_images)
+    # vae_generate_mod_images(vae_encoder, vae_decoder, example_images)
     
     
     plt.show()
